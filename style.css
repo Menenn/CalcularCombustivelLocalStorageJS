@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+*, input, button {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #f3f700;
+    background-image: url("https://www.transparenttextures.com/patterns/escheresque-dark.png");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.6rem;
+    margin-bottom: 2.4rem;
+    background-color: #00e6db;
+    background-image: url("https://www.transparenttextures.com/patterns/light-honeycomb-dark.png");
+}
+
+header button{
+    width: 30vw;
+    height: 2rem;
+    border-radius: 1rem;
+    border: 0;
+    text-align: center;
+    background-color: rgb(0, 199, 0);
+    border: 0.3px solid #ffffff;
+    color: white;
+    font-size: 1rem;
+}
+
+header button:hover{
+    cursor: pointer;
+}
+
+#tituloh1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5%;
+    color: white;
+}
+
+#Inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 1rem;
+    width: 50%;
+    background-color: #00e6db;
+    background-image: url("https://www.transparenttextures.com/patterns/light-honeycomb-dark.png");
+}
+
+#Inputs button{
+    margin-bottom: 5%;
+    margin-top: 2%;
+    margin-left: 2%;
+    width: 30vw;
+    height: 2rem;
+    border-radius: 1rem;
+    border: 0;
+    text-align: center;
+    background-color: rgb(0, 199, 0);
+    border: 0.3px solid #ffffff;
+    color: white;
+    font-size: 18px;
+}
+
+#Inputs button:hover{
+    cursor: pointer;
+}
+
+#DivInputs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Inputs h3{
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    justify-content: center;
+    width: 30vw;
+}
+
+#Inputs h3 input{
+    margin: 2%;
+    width: 30vw;
+    height: 2rem;
+    border-radius: 1rem;
+    border: 0;
+    text-align: center;
+}
+
+#resultado{
+    background-color: rgba(192, 255, 255, 0.582);
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 140%;
+    position: absolute;
+    top: 0;
+}
+
+#resultadodiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #00e6db;
+    background-image: url("https://www.transparenttextures.com/patterns/light-honeycomb-dark.png");
+    border-radius: 1rem;
+}
+
+#resultado *{
+    margin: 2%;
+}
+
+#resultadodiv button{
+    width: 100%;
+    border-radius: 2rem;
+    border: 0;
+    margin: 1rem;
+    background-color: #f7eb00;
+    background-image: url("https://www.transparenttextures.com/patterns/escheresque-dark.png");
+    color: white;
+}
+
+#resultadodiv button:hover{
+    cursor: pointer;
+}
+
+#resultado #acoes{
+    display: flex;
+    flex-direction: row;
+}
+
+#historico{
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 140%;
+    position: absolute;
+    background-color: rgba(192, 255, 255, 0.582);
+    top: 0;
+}
+
+#historicodiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #00e6db;
+    background-image: url("https://www.transparenttextures.com/patterns/light-honeycomb-dark.png");
+    border-radius: 1rem;
+    width: 85%;
+}
+
+#historico button{
+    width: 100%;
+    border-radius: 2rem;
+    border: 0;
+    margin: 1rem;
+    background-color: #f7eb00;
+    background-image: url("https://www.transparenttextures.com/patterns/escheresque-dark.png");
+    color: white;
+}
+
+#historico button:hover{
+    cursor: pointer;
+}
+
+#historico #conteudo-modal{
+    display: flex;
+    font-size: 0.9rem;
+}
+
+#historico *{
+    margin: 0.5%;
+    margin-top: 2.2%;
+}
+
+#conteudo-modal table{
+    width: 80vw;
+}
+
+#conteudo-modal table thead tr *, #conteudo-modal table tbody *{
+    margin: 10%;
+}
+
+#conteudo-modal table thead tr *{
+    padding: 0.24%;
+}
+
+#conteudo-modal tbody{
+    color: rgb(87, 87, 87);
+}
+
+
+#historico #acoes{
+    display: flex;
+    flex-direction: row;
+    margin: 2%;
+}

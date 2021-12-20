@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Combustível</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <button onclick="Historico()">Histórico</button>
+    </header>
+
+    <div id="tituloh1">
+        <h2>
+            Insira algumas informações e saiba quanto você gasta com o combustível de seu veículo
+        </h2>
+    </div>
+    <div id="DivInputs">
+        <div id="Inputs">
+            <h3>
+                Quantos km/l seu carro ou moto faz?
+                <input type="number" name="kmlitro" id="kmlitro" placeholder="KM/L do carro" required>
+            </h3>
+            <h3>
+                Qual o preço atual da gasolina no posto que você abastece?
+                <input type="number" name="preco" id="preco" placeholder="Preço da Gasolina" required>
+            </h3>
+            <h3>
+                Quantos km por dia você percorre?
+                <input type="number" name="kmdia" id="kmdia" placeholder="Quantos KM por dia" required>
+            </h3>
+            <h3>
+                Quantos dias da semana você anda com o carro ou moto?
+                <input type="number" maxlength="1" name="dias" id="dias" placeholder="Quantos dias da semana" oninput="EditarTextos(3)" required>
+            </h3>
+
+            <h3>
+                Digite seu CPF/CNPJ
+                <input maxlength="17" type="text" name="dias" id="cpf" placeholder="CPF" oninput="EditarTextos(0)" required>
+            </h3>
+
+            <h3>
+                Digite seu RG
+                <input maxlength="12" type="text" name="dias" id="rg" placeholder="RG" oninput="EditarTextos(2)" required>
+            </h3>
+
+            <h3>
+                Digite seu Telefone
+                <input type="text" name="dias" maxlength="18" id="tel" placeholder="Telefone (com DDD)" oninput="EditarTextos(1)" required>
+            </h3>
+
+            <div id="botaocalc">
+                <button onclick="calcular()">Calcular</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="resultado">
+        <div id="resultadodiv">
+            <h1>
+                Resultado
+            </h1>
+            <div id="conteudo-modal">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Gasto diário</th>
+                            <th>Gasto semanal</th>
+                            <th>Gasto mensal</th>
+                            <th>Gasto anual</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resultadotbody">
+                    </tbody>
+                </table>
+            </div>
+            <div id="acoes">
+                <button id="salvar" onclick="salvarCalc()">
+                    Salvar cálculo no histórico
+                </button>
+                <button id="descartar" onclick="DescartarCalc()">
+                    Descartar e fazer novo cálculo
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="historico">
+        <div id="historicodiv">
+            <h1>
+                Histórico
+            </h1>
+            <div id="conteudo-modal">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Preço gasolina</th>
+                            <th>Média km/l</th>
+                            <th>Gasto diário</th>
+                            <th>Gasto semanal</th>
+                            <th>Gasto mensal</th>
+                            <th>Gasto anual</th>
+                            <th>CPF/CNPJ</th>
+                            <th>RG</th>
+                            <th>Telefone</th>
+                            <th>Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody id="historicotbody"></tbody>
+                </table>
+            </div>
+            <div id="acoes">
+                <button onclick="Historico()">
+                    Fechar
+                </button>
+                <button id="excluir-registros" onclick="HistoricoDelAll()">
+                    Excluir tudo
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
